@@ -6,38 +6,51 @@
 const int PIN_LED1 = 3;
 const int PIN_BTN1 = 15;
 const int PIN_LED2 = 4;
-const int PIN_BTN2 = 16;
+const int PIN_BTN2 = 14;
 const int PIN_LED3 = 5;
-const int PIN_BTN3 = 17;
+const int PIN_BTN3 = 16;
 
 // Joystick initialisation
 // TODO try to set it as a Gamepad, not a joystick
 Joystick_ Joystick;
 
+void buttonHandler(uint8_t btnID, uint8_t btnSTate) {
+    if (btnSTate == BTN_PRESSED) {
+        Joystick.pressButton(btnID);
+        Serial.println("Button ");
+        Serial.print(btnID);
+        Serial.print(" pressed");
+        digitalWrite(PIN_LED1, 1);
+    } else {
+        Joystick.releaseButton(btnID);
+        Serial.println("Button ");
+        Serial.print(btnID);
+        Serial.print(" released");
+        digitalWrite(PIN_LED1, 0);
+    }
+}
+
+static Button btn1(0, buttonHandler);
+static Button btn2(1, buttonHandler);
+static Button btn3(2, buttonHandler);
+
 void setup() {
     pinMode(PIN_BTN1, INPUT_PULLUP);
+    pinMode(PIN_BTN2, INPUT_PULLUP);
+    pinMode(PIN_BTN3, INPUT_PULLUP);
     pinMode(PIN_LED1, OUTPUT);
 
     Serial.begin(9600);
     Joystick.begin();
 }
 
-int lastStateBTN1 = 0;
+static void pollButtons() {
+    btn1.update(digitalRead(PIN_BTN1));
+    btn2.update(digitalRead(PIN_BTN2));
+    btn3.update(digitalRead(PIN_BTN3));
+}
 
 void loop() {
-    // rising edge detector
-    int currentStateBTN1 = !digitalRead(PIN_BTN1);
-    if (currentStateBTN1 != lastStateBTN1) {
-        if (currentStateBTN1 == 1) {
-            Serial.println("Button 1 pressed");
-            digitalWrite(PIN_LED1, 1);
-            Joystick.pressButton(0);
-            lastStateBTN1 = 1;
-        } else if (currentStateBTN1 == 0) {
-            Serial.println("Button 1 released");
-            digitalWrite(PIN_LED1, 0);
-            Joystick.releaseButton(0);
-            lastStateBTN1 = 0;
-        }
-    }
+    pollButtons();
+    delay(10);
 }
