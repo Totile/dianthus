@@ -1,32 +1,43 @@
-/**
- * Blink
- *
- * Turns on an LED on for one second,
- * then off for one second, repeatedly.
- */
 #include "Arduino.h"
+#include "Joystick.h"
+#include "debounce.h"
 
-#ifndef LED_BUILTIN
-#define LED_BUILTIN 13
-#endif
+// Pinout definition
+const int PIN_LED1 = 3;
+const int PIN_BTN1 = 15;
+const int PIN_LED2 = 4;
+const int PIN_BTN2 = 16;
+const int PIN_LED3 = 5;
+const int PIN_BTN3 = 17;
 
-void setup()
-{
-  // initialize LED digital pin as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
+// Joystick initialisation
+// TODO try to set it as a Gamepad, not a joystick
+Joystick_ Joystick;
+
+void setup() {
+    pinMode(PIN_BTN1, INPUT_PULLUP);
+    pinMode(PIN_LED1, OUTPUT);
+
+    Serial.begin(9600);
+    Joystick.begin();
 }
 
-void loop()
-{
-  // turn the LED on (HIGH is the voltage level)
-  digitalWrite(LED_BUILTIN, HIGH);
+int lastStateBTN1 = 0;
 
-  // wait for a second
-  delay(1000);
-
-  // turn the LED off by making the voltage LOW
-  digitalWrite(LED_BUILTIN, LOW);
-
-   // wait for a second
-  delay(1000);
+void loop() {
+    // rising edge detector
+    int currentStateBTN1 = !digitalRead(PIN_BTN1);
+    if (currentStateBTN1 != lastStateBTN1) {
+        if (currentStateBTN1 == 1) {
+            Serial.println("Button 1 pressed");
+            digitalWrite(PIN_LED1, 1);
+            Joystick.pressButton(0);
+            lastStateBTN1 = 1;
+        } else if (currentStateBTN1 == 0) {
+            Serial.println("Button 1 released");
+            digitalWrite(PIN_LED1, 0);
+            Joystick.releaseButton(0);
+            lastStateBTN1 = 0;
+        }
+    }
 }
