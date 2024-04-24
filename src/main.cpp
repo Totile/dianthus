@@ -17,15 +17,15 @@ Joystick_ Joystick;
 void buttonHandler(uint8_t btnID, uint8_t btnSTate) {
     if (btnSTate == BTN_PRESSED) {
         Joystick.pressButton(btnID);
-        Serial.println("Button ");
+        Serial.print("Button ");
         Serial.print(btnID);
-        Serial.print(" pressed");
+        Serial.println(" pressed");
         digitalWrite(PIN_LED1, 1);
     } else {
         Joystick.releaseButton(btnID);
-        Serial.println("Button ");
+        Serial.print("Button ");
         Serial.print(btnID);
-        Serial.print(" released");
+        Serial.println(" released");
         digitalWrite(PIN_LED1, 0);
     }
 }
