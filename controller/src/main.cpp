@@ -52,5 +52,5 @@ static void pollButtons() {
 
 void loop() {
     pollButtons();
-    delay(10);
+    delay(25);
 }
