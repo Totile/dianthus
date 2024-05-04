@@ -3989,25 +3989,6 @@
 		)
 		(uuid "ba6032e9-5faa-4d27-8981-18a516f83661")
 	)
-	(text_box "Pull-up resistor reference:\n- 10k: 0805W8F1002T5E\n- 4k7k: 0805W8F470KT5E\n- 1k: 0805W8F1001T5E\n\nDecoupling capacitor reference:\n- 10uF: CL31A106KBHNNNE\n- 0.1uF: CL05B104KB54PNC"
-		(exclude_from_sim no)
-		(at 86.36 137.16 0)
-		(size 35.56 20.32)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "f5d44fb4-46d0-4b92-9022-ecf50f50fa04")
-	)
 	(label "BTN10"
 		(at 198.12 100.33 0)
 		(fields_autoplaced yes)
@@ -4675,7 +4656,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "007c8102-d474-4fe9-94ba-840094e10ec4")
 		(property "Reference" "TP1"
@@ -5124,6 +5105,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C160390"
+			(at 163.83 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "de844db5-771b-4c28-b1dd-6e1d6fd7a59c")
 		)
@@ -5195,6 +5185,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 208.28 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C17675"
 			(at 208.28 26.67 0)
 			(effects
 				(font
@@ -5339,6 +5338,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C17414"
+			(at 116.84 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9f8e76c8-4083-4330-8805-46496736e7c5")
 		)
@@ -5372,7 +5380,7 @@
 				)
 			)
 		)
-		(property "Value" "DB301V-3.5-2P-GN-S"
+		(property "Value" "Screw terminal"
 			(at 97.79 29.21 0)
 			(effects
 				(font
@@ -5399,6 +5407,15 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 97.79 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C695629"
 			(at 97.79 35.56 0)
 			(effects
 				(font
@@ -5536,6 +5553,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 115.57 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C13585"
 			(at 115.57 69.85 0)
 			(effects
 				(font
@@ -6188,7 +6214,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5b26d4c1-39c5-490f-b7b1-787871e88116")
 		(property "Reference" "MCU1"
@@ -6322,7 +6348,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5ba66b7a-0c42-4746-b962-154f90d020ed")
 		(property "Reference" "TP3"
@@ -6476,7 +6502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 147.32 22.86 0)
 			(effects
 				(font
@@ -6710,6 +6736,15 @@
 				(hide yes)
 			)
 		)
+		(property "jMPN" "C17414"
+			(at 144.78 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "97ec6815-e6ed-4e0d-aae8-d244f62de085")
 		)
@@ -6732,7 +6767,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "717bbd94-238e-44f8-aa5f-04ae905b94dc")
 		(property "Reference" "TP4"
@@ -7118,6 +7153,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C17414"
+			(at 97.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a1af3c7b-bfad-4378-8938-b52bcb57455c")
 		)
@@ -7211,7 +7255,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "89d8a2e3-da83-4e65-930f-8a0de82fd20e")
 		(property "Reference" "TP5"
@@ -7737,6 +7781,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C307331"
+			(at 102.87 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3c2d1b2e-be84-447b-87be-048113466a07")
 		)
@@ -7865,6 +7918,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 137.16 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C17414"
 			(at 137.16 81.28 0)
 			(effects
 				(font
@@ -8146,6 +8208,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C2910844"
+			(at 71.12 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8d655e86-1558-4b79-abe1-9ed7d3b994c7")
 		)
@@ -8274,6 +8345,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 217.17 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C17675"
 			(at 217.17 26.67 0)
 			(effects
 				(font
@@ -8757,6 +8837,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C17414"
+			(at 128.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d85277a8-b4dc-4dc2-964a-fbb9ebd643cd")
 		)
@@ -8958,6 +9047,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C17414"
+			(at 107.95 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9f59bb04-c51e-4597-8a44-8844cc9631df")
 		)
@@ -8980,7 +9078,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e53f356b-fee0-4b2c-8756-fd484eb028d2")
 		(property "Reference" "TP2"

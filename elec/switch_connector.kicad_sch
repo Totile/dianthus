@@ -2774,6 +2774,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C17414"
+			(at 82.55 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d05a34dd-02e3-4998-b76e-c08d74c76ec1")
 		)
@@ -3087,6 +3096,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C8545"
+			(at 90.17 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "59762434-4f97-449a-86cd-4de1ce6ff909")
 		)
@@ -3290,6 +3308,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 92.71 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C17513"
 			(at 92.71 63.5 0)
 			(effects
 				(font
@@ -3600,6 +3627,15 @@
 			)
 		)
 		(property "Description" "Generic shielded connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 106.68 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C160390"
 			(at 106.68 41.91 0)
 			(effects
 				(font
