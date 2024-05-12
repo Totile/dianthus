@@ -10,7 +10,7 @@
 A button box to interface with web-based GUI, when you want to just push on buttons to do repetitive tasks. This replaces the need for the small buttons of a keyboard, or *worse*, a MOUSE.
 
 
-* Hardware Supported: This box is based on the XB7 industrial button from Schneider electrics.
+* Hardware Supported: This box is based on the XB7 industrial button from Schneider electrics. And a promicro development board.
 * Hardware Availability: 
 
 ## Installation guide
