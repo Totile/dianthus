@@ -256,12 +256,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C8545"
+		(property "MPN" "C8545"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2ea95044-e4a6-4558-af48-2f06eb9dba96")
+			(uuid "e4cef773-25c5-4d59-9aa8-774a9b036305")
 			(effects
 				(font
 					(size 1 1)
@@ -1208,12 +1208,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C8545"
+		(property "MPN" "C8545"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a72f43b2-5164-4007-a909-a7927b79f715")
+			(uuid "4edd7862-a39f-46c9-aa76-bc92604f208c")
 			(effects
 				(font
 					(size 1 1)
@@ -1489,7 +1489,7 @@
 		(path "/5ba66b7a-0c42-4746-b962-154f90d020ed")
 		(sheetname "Root")
 		(sheetfile "elec.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -1937,12 +1937,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C160390"
+		(property "MPN" "C160390"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c237331c-2507-4c28-b5c0-4b68860ae5f2")
+			(uuid "017c985c-110f-41f1-8a69-7c8581293d51")
 			(effects
 				(font
 					(size 1 1)
@@ -2760,12 +2760,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C160390"
+		(property "MPN" "C160390"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "35ad9ce8-15a6-46f8-936e-2cab2e22468b")
+			(uuid "dc874c6b-4edb-4dbf-b1a8-d77ccb0c1013")
 			(effects
 				(font
 					(size 1 1)
@@ -3245,12 +3245,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C8545"
+		(property "MPN" "C8545"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3a645edf-e2b5-4c60-bbec-5d2bb341b402")
+			(uuid "0f75f605-a82c-402f-bc8d-ad3cad08f0fd")
 			(effects
 				(font
 					(size 1 1)
@@ -3522,12 +3522,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e0d94d48-5f06-4abf-8dc3-dce135deadaf")
+			(uuid "0586166c-7b9f-44a7-bbe1-0179f5b910be")
 			(effects
 				(font
 					(size 1 1)
@@ -4256,7 +4256,7 @@
 		(path "/007c8102-d474-4fe9-94ba-840094e10ec4")
 		(sheetname "Root")
 		(sheetfile "elec.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -5068,12 +5068,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C160390"
+		(property "MPN" "C160390"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "711f50b5-9a96-4681-9b9a-a6d465c79f46")
+			(uuid "f86f5f75-8577-4043-bbb4-3bb1506771f8")
 			(effects
 				(font
 					(size 1 1)
@@ -5553,12 +5553,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d50a1305-4422-4bab-857d-87cdd0029ae1")
+			(uuid "1300f0fe-00ec-4f70-9304-0aed9d2e20ab")
 			(effects
 				(font
 					(size 1 1)
@@ -5945,12 +5945,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C160390"
+		(property "MPN" "C160390"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f502c163-4a1c-467d-8155-cdb67f1d8943")
+			(uuid "889b059d-d53f-474d-a457-efb58478ff4c")
 			(effects
 				(font
 					(size 1 1)
@@ -6430,12 +6430,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C2910844"
+		(property "MPN" "C2910844"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a946e1ac-3cde-4fbf-879d-565759b45e3f")
+			(uuid "ec39f879-338c-4f38-9aef-6e38dba9a9c8")
 			(effects
 				(font
 					(size 1 1)
@@ -6639,12 +6639,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17675"
+		(property "MPN" "C17675"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "31787137-c14b-42d4-8c22-fbd9cec088ed")
+			(uuid "5067242d-b09c-46c0-b9df-74a1ca186d7b")
 			(effects
 				(font
 					(size 1 1)
@@ -7031,12 +7031,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17513"
+		(property "MPN" "C17513"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bb4d02fa-86d9-4859-b02c-87467d50ecd3")
+			(uuid "d3ee32ca-78b2-40dd-b243-5a4b2b44567e")
 			(effects
 				(font
 					(size 1 1)
@@ -7254,12 +7254,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C8545"
+		(property "MPN" "C8545"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "532425bb-6bb6-42de-ad5b-eca37a8b941d")
+			(uuid "9b3d74bf-c5ce-4a75-8524-d2a43d9e0f79")
 			(effects
 				(font
 					(size 1 1)
@@ -7700,12 +7700,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C8545"
+		(property "MPN" "C8545"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "44182e71-25d6-4658-a699-ed2f1db1f620")
+			(uuid "e52ca96f-3edf-4291-85b3-1950dcb5d8af")
 			(effects
 				(font
 					(size 1 1)
@@ -7977,12 +7977,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2604faa6-284b-4033-b495-2a728fa18c35")
+			(uuid "e0f7d808-ddb1-486a-9351-642c1a02f33f")
 			(effects
 				(font
 					(size 1 1)
@@ -8204,7 +8204,7 @@
 		(path "/89d8a2e3-da83-4e65-930f-8a0de82fd20e")
 		(sheetname "Root")
 		(sheetfile "elec.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -8666,12 +8666,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17513"
+		(property "MPN" "C17513"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "23e6d4c5-b8d5-48c7-b6df-35be75cc4c22")
+			(uuid "add49bf0-072d-48c1-b994-91e2fd5e851e")
 			(effects
 				(font
 					(size 1 1)
@@ -8889,12 +8889,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C160390"
+		(property "MPN" "C160390"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e69482f7-d23a-4a24-98c6-c23786d4e79a")
+			(uuid "3a07cddc-d2c1-4492-ba30-c05195bf186c")
 			(effects
 				(font
 					(size 1 1)
@@ -9374,12 +9374,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C8545"
+		(property "MPN" "C8545"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c760dd9d-bf87-4829-88ab-3ce9333e5dd4")
+			(uuid "dcdc32d9-0992-4d98-96fe-537f3efd81c0")
 			(effects
 				(font
 					(size 1 1)
@@ -9651,12 +9651,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "96c754ee-3573-43e6-9dd7-e7efb0601d32")
+			(uuid "30e5d6fb-486a-4409-be1d-06c6bff8ba2b")
 			(effects
 				(font
 					(size 1 1)
@@ -9874,12 +9874,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17513"
+		(property "MPN" "C17513"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "183d743f-443d-4384-b8eb-0924105c8043")
+			(uuid "94909d7d-b092-42bb-92f6-bfb55cc65c6e")
 			(effects
 				(font
 					(size 1 1)
@@ -10097,12 +10097,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0ede2a54-4cb3-433d-be2e-10eb0cbbc824")
+			(uuid "83b1a448-09ad-414d-b1d7-1894b2907e61")
 			(effects
 				(font
 					(size 1 1)
@@ -10320,12 +10320,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17513"
+		(property "MPN" "C17513"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "09523a77-588f-4339-aeba-1c46c8803b78")
+			(uuid "7a15271f-9482-48b5-857a-972bfb19cac1")
 			(effects
 				(font
 					(size 1 1)
@@ -11506,12 +11506,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C160390"
+		(property "MPN" "C160390"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dd1f1815-3b2e-4597-827a-65c1d45e54c3")
+			(uuid "8dec672e-9683-40e9-9536-6a63d6495393")
 			(effects
 				(font
 					(size 1 1)
@@ -11991,12 +11991,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C160390"
+		(property "MPN" "C160390"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "40ffc268-f354-48a5-8381-69b625a6b670")
+			(uuid "c803a223-e1bc-46bb-b106-e7647a502fa2")
 			(effects
 				(font
 					(size 1 1)
@@ -12476,12 +12476,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17513"
+		(property "MPN" "C17513"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "00576c02-c48e-4cfe-a535-400f67b4304c")
+			(uuid "a0644556-c745-4d13-a15f-ae6e3a1b38c7")
 			(effects
 				(font
 					(size 1 1)
@@ -12700,12 +12700,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C695629"
+		(property "MPN" "C695629"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e1955875-8d6b-4163-95f0-91047296bc3e")
+			(uuid "3d2292f9-a1c2-4fe5-9b34-aa7c55db9d11")
 			(effects
 				(font
 					(size 1 1)
@@ -12919,12 +12919,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C8545"
+		(property "MPN" "C8545"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0dd91597-37dd-4905-bddf-b729f16d801b")
+			(uuid "60e0256a-1ded-46d0-a906-b7fdb6c50980")
 			(effects
 				(font
 					(size 1 1)
@@ -13196,12 +13196,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17513"
+		(property "MPN" "C17513"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e5fd4a3d-4b3f-4717-b628-9864267fedb2")
+			(uuid "a951ae23-d054-44ec-bfd7-7cbd9c62a4b5")
 			(effects
 				(font
 					(size 1 1)
@@ -13419,12 +13419,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C160390"
+		(property "MPN" "C160390"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0aacf7b4-f6ac-4a3f-a520-dbc8f4b523b7")
+			(uuid "b34ac686-18f5-42c5-8b32-993e3f739e57")
 			(effects
 				(font
 					(size 1 1)
@@ -14255,12 +14255,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C8545"
+		(property "MPN" "C8545"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5e68a5a4-8980-4263-a995-65783a6060ed")
+			(uuid "c2d03097-c3d5-4c56-b9fa-c9af0a0b26d4")
 			(effects
 				(font
 					(size 1 1)
@@ -14532,12 +14532,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C8545"
+		(property "MPN" "C8545"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1a7a4a3d-6b10-4b5a-8e97-02cd19f56b2e")
+			(uuid "6e341d1e-928b-4f4a-a826-1c7376f27065")
 			(effects
 				(font
 					(size 1 1)
@@ -14809,12 +14809,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f285f614-b960-4cbf-a20c-4e1f3248bedc")
+			(uuid "97d68d73-93c8-4a56-8fa5-bdd5739d795f")
 			(effects
 				(font
 					(size 1 1)
@@ -15032,12 +15032,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C13585"
+		(property "MPN" "C13585"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1321f4b5-9e99-4a03-9484-170f954b5bf2")
+			(uuid "7e216b21-0c01-4296-b0cf-9b34141820a4")
 			(effects
 				(font
 					(size 1 1)
@@ -15255,12 +15255,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C160390"
+		(property "MPN" "C160390"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b98cb72c-c276-4014-a24c-6bfeaa4718a4")
+			(uuid "833189d1-d694-454b-a53b-6d020028370d")
 			(effects
 				(font
 					(size 1 1)
@@ -15740,12 +15740,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C160390"
+		(property "MPN" "C160390"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "980cd8d1-55f3-42c3-a218-b94ae46750d2")
+			(uuid "9054891e-8a0b-461f-bb04-f87c8905fe08")
 			(effects
 				(font
 					(size 1 1)
@@ -16225,12 +16225,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "56c38d26-163f-4d73-8401-93658c2554c7")
+			(uuid "f73be278-8677-4373-8474-edea504f6f9d")
 			(effects
 				(font
 					(size 1 1)
@@ -16754,12 +16754,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ab76d91b-b199-432d-9f60-7e37481525f0")
+			(uuid "7d031242-14b6-4492-93c5-629b6dbb5c84")
 			(effects
 				(font
 					(size 1 1)
@@ -17146,12 +17146,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d28499b6-fcb3-4d60-93fe-13243f3fb7a3")
+			(uuid "1a4f24f3-b161-4945-9375-e36c851435be")
 			(effects
 				(font
 					(size 1 1)
@@ -17369,12 +17369,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "09b72288-f69f-45f2-8cad-af73252a061d")
+			(uuid "812f22b3-fc0c-49ee-8d2b-d2f3abf4e58c")
 			(effects
 				(font
 					(size 1 1)
@@ -17592,12 +17592,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a05adcfc-aa09-47bc-9d4e-caad68029a82")
+			(uuid "305b8e2a-190b-4191-a214-34192a506d64")
 			(effects
 				(font
 					(size 1 1)
@@ -17815,12 +17815,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17513"
+		(property "MPN" "C17513"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "474b4744-22ce-43b5-9f19-5500616f4cf9")
+			(uuid "4e7c8442-70bb-4744-98a4-0f911669bb01")
 			(effects
 				(font
 					(size 1 1)
@@ -18038,12 +18038,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "39a3da5e-6569-4a2e-968f-fdda96641c71")
+			(uuid "e7d359e4-a4c3-457f-a991-42223f93f95d")
 			(effects
 				(font
 					(size 1 1)
@@ -18261,12 +18261,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C8545"
+		(property "MPN" "C8545"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bb24bd82-3ba8-46d0-bcbb-4d2047c93b98")
+			(uuid "5e2ff8cf-ae5d-41c5-8aef-6ebada273678")
 			(effects
 				(font
 					(size 1 1)
@@ -18538,12 +18538,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "jMPN" "C17414"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f252169f-9555-453d-ac4d-b9098f934a8e")
+			(uuid "347ec341-145c-4881-8d54-fd86385924c8")
 			(effects
 				(font
 					(size 1 1)
@@ -18765,7 +18765,7 @@
 		(path "/e53f356b-fee0-4b2c-8756-fd484eb028d2")
 		(sheetname "Root")
 		(sheetfile "elec.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -18875,12 +18875,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c76a6015-3b88-4202-b106-c56151042df6")
+			(uuid "389a6738-b387-4e60-acd5-72fc9c70bd57")
 			(effects
 				(font
 					(size 1 1)
@@ -19267,12 +19267,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "93c0bd3f-6f4e-44fd-8116-fd9d1852fa78")
+			(uuid "e13f8443-8fc5-4dfb-a64c-29efc7593d64")
 			(effects
 				(font
 					(size 1 1)
@@ -19490,12 +19490,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17513"
+		(property "MPN" "C17513"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f6c25bee-5320-48b2-9cca-d17b1a0b4282")
+			(uuid "31fd98dd-e32e-4a01-bf33-0dabc320365d")
 			(effects
 				(font
 					(size 1 1)
@@ -19713,12 +19713,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17675"
+		(property "MPN" "C17675"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d59e9116-b9d5-4870-b745-38b64fe0f8f3")
+			(uuid "e25d50f1-d88e-4fdd-bef5-b3499e5fa495")
 			(effects
 				(font
 					(size 1 1)
@@ -20411,7 +20411,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 8 "/BTN5")
-			(pinfunction "9")
+			(pinfunction "8")
 			(pintype "tri_state")
 			(uuid "4e51fdb3-f2d7-4c5d-b13a-66bd22ceca61")
 		)
@@ -20422,7 +20422,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 44 "/LA5")
-			(pinfunction "8")
+			(pinfunction "9")
 			(pintype "tri_state")
 			(uuid "57b5afd0-15b0-4614-9914-04cc9cb982de")
 		)
@@ -20623,12 +20623,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17513"
+		(property "MPN" "C17513"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7ac1cb76-9d11-4af8-bfda-a44ed47c3128")
+			(uuid "eaea8961-bccf-4a95-b32e-a876f4e889e6")
 			(effects
 				(font
 					(size 1 1)
@@ -20846,12 +20846,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C307331"
+		(property "MPN" "C307331"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "10201953-a1c2-438a-8d7d-8304cdeb7795")
+			(uuid "56f256fb-26f5-4fed-a44a-e82a4e172445")
 			(effects
 				(font
 					(size 1 1)
@@ -21425,7 +21425,7 @@
 		(path "/717bbd94-238e-44f8-aa5f-04ae905b94dc")
 		(sheetname "Root")
 		(sheetfile "elec.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.75)
@@ -21535,12 +21535,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C160390"
+		(property "MPN" "C160390"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "24af050f-fa37-42b3-9ae3-d2eaba5ae52e")
+			(uuid "b44f0609-a86f-464e-9d0f-3607565fccf5")
 			(effects
 				(font
 					(size 1 1)
@@ -22020,12 +22020,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17513"
+		(property "MPN" "C17513"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e0200642-570c-44a5-9e31-4840cc24f084")
+			(uuid "0177aaee-bc6f-4b19-9be3-b39bb5bd30f1")
 			(effects
 				(font
 					(size 1 1)
@@ -22243,12 +22243,12 @@
 				)
 			)
 		)
-		(property "jlcpcb" "C17414"
+		(property "MPN" "C17414"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "18d0bbe8-3587-42ca-beab-92be198d132c")
+			(uuid "773511aa-adf3-4c2d-a21d-e0d3caddee7b")
 			(effects
 				(font
 					(size 1 1)
@@ -24415,6 +24415,15 @@
 		(uuid "0bcea5dd-a109-4468-9897-479c6a570220")
 	)
 	(via
+		(at 32 78.25)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net 2)
+		(uuid "0bfa250d-65b4-4013-995c-eb2cad068e56")
+	)
+	(via
 		(at 64 32.25)
 		(size 0.6)
 		(drill 0.3)
@@ -24549,6 +24558,15 @@
 		(layers "F.Cu" "B.Cu")
 		(net 2)
 		(uuid "254020cd-fe54-452c-b7cf-f112b946affe")
+	)
+	(via
+		(at 29.75 91.75)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net 2)
+		(uuid "2590e951-4798-4027-af03-317a23433d8b")
 	)
 	(via
 		(at 144 83.4)
@@ -24851,6 +24869,15 @@
 		(free yes)
 		(net 2)
 		(uuid "7d41608a-5d20-4d57-96fd-f130f396eb27")
+	)
+	(via
+		(at 32 66)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net 2)
+		(uuid "81987dee-d233-44cc-88eb-f71e2810954b")
 	)
 	(via
 		(at 135.75 37)
@@ -26355,14 +26382,6 @@
 		(uuid "483b69ae-1fbc-4aa3-854a-7053c8f3e44b")
 	)
 	(segment
-		(start 77.41 49.09)
-		(end 82.62 49.09)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 8)
-		(uuid "73b33bdb-1975-4aba-b576-e4ad58bb5339")
-	)
-	(segment
 		(start 33.5 88.75)
 		(end 71 88.75)
 		(width 0.2)
@@ -26393,6 +26412,14 @@
 		(layer "F.Cu")
 		(net 8)
 		(uuid "ab3a6f77-e7f4-4e6a-a181-94cc4e9ae121")
+	)
+	(segment
+		(start 77.41 49.09)
+		(end 82.62 49.09)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 8)
+		(uuid "b176d629-2476-4a8c-b166-f4f6d8552e27")
 	)
 	(segment
 		(start 30.15 85.4)
@@ -28971,6 +28998,14 @@
 		(uuid "102fc58a-71b0-4adb-a6c4-f0aa6e27e2cf")
 	)
 	(segment
+		(start 74.95 46.55)
+		(end 82.62 46.55)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 44)
+		(uuid "132e2470-182a-47a0-b896-f34c6eaf2edf")
+	)
+	(segment
 		(start 68.925 83.575)
 		(end 73 79.5)
 		(width 0.2)
@@ -29001,14 +29036,6 @@
 		(layer "F.Cu")
 		(net 44)
 		(uuid "824a35d2-cf4e-4ac1-8fd2-c1b9aab8897c")
-	)
-	(segment
-		(start 74.95 46.55)
-		(end 82.62 46.55)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 44)
-		(uuid "99ed802b-1c2f-48b3-8ae5-7b6f2dadf56c")
 	)
 	(segment
 		(start 39.5 83.575)
