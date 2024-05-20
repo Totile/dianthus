@@ -18,13 +18,13 @@ void buttonHandler(uint8_t btnID, uint8_t btnSTate) {
         Serial.print("Button ");
         Serial.print(btnID);
         Serial.println(" pressed");
-        digitalWrite(lampPin[0], 1);
+        digitalWrite(lampPin[1], 1);
     } else {
         Joystick.releaseButton(btnID);
         Serial.print("Button ");
         Serial.print(btnID);
         Serial.println(" released");
-        digitalWrite(lampPin[0], 0);
+        digitalWrite(lampPin[1], 0);
     }
 }
 
@@ -42,6 +42,7 @@ void setup() {
         btnArr[i] = tempBtn;
     }
     digitalWrite(lampPin[2], 1);
+    digitalWrite(lampPin[3], 1);
 
     Serial.begin(9600);
     Joystick.begin();
@@ -49,7 +50,8 @@ void setup() {
 
 static void pollButtons() {
     for (int i = 0; i < btnCount; i++) {
-        btnArr[i].update(digitalRead(btnPin[i]));
+        int state = digitalRead(btnPin[i]);
+        btnArr[i].update(state);
     }
 }
 
