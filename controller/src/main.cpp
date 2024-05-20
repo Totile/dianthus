@@ -30,6 +30,8 @@ void loop() {
     for (int i = 0; i < btnCount; i++) {
         if (!digitalRead(btnPin[i])) {
             Joystick.pressButton(i);
+            Serial.print(i);
+            Serial.println(" button pressed");
         } else {
             Joystick.releaseButton(i);
         }
