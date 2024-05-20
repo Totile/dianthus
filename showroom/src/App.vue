@@ -1,47 +1,82 @@
-<script setup>
+<script>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import PressButtonIndicator from './components/PressButtonIndicator.vue';
+import { GlobalEvents } from 'vue-global-events';
+
+export default {
+  components: {
+    PressButtonIndicator,
+    GlobalEvents,
+  },
+  data() {
+    return {
+      gamepad: null,
+      btnCount: 8,
+    }
+  },
+  mounted() {
+    /* window.addEventListener("gamepadconnected", (e) => {
+      console.log(
+        "Gamepad connected at index %d: %s. %d buttons, %d axes.",
+        e.gamepad.index,
+        e.gamepad.id,
+        e.gamepad.buttons.length,
+        e.gamepad.axes.length,
+      );
+      this.gamepad = e.gamepad
+    }); */
+  },
+  methods: {
+    connectGamepad(event) {
+      console.log(
+        "Gamepad connected at index %d: %s. %d buttons, %d axes.",
+        event.gamepad.index,
+        event.gamepad.id,
+        event.gamepad.buttons.length,
+        event.gamepad.axes.length,
+      );
+      this.gamepad = navigator.getGamepads()[event.gamepad.index];
+      this.pollGamepad();
+      console.log("poll started")
+    },
+    disconnectGamepad(event) {
+      this.gamepad = null
+      clearInterval(this.pollInterval)
+      console.log("Gamepad disconnected, poll ended")
+    },
+    showGamepadStatus() {
+      console.log(this.gamepad.buttons)
+      console.log(this.gamepad.buttons[2].pressed)
+      console.log(this.gamepad.buttons[0].pressed)
+    },
+    pollGamepad() {
+      this.pollInterval = setInterval(() => {
+        this.gamepad = navigator.getGamepads()[0];
+        // console.log(this.gamepad)
+      }, 25)
+    },
+  },
+  computed: {
+    buttons() {
+      return this.gamepad.buttons
+    }
+  },
+  beforeDestroy() {
+    clearInterval(this.pollInterval)
+  }
+}
 </script>
 
-<template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+<template class="container">
+  <GlobalEvents target="window" @gamepadconnected="connectGamepad" @gamepaddisconnected="disconnectGamepad" />
+  <div class="row">
+    <div v-if="gamepad" v-for="id in btnCount" class="col-sm">
+      <PressButtonIndicator :buttonPressed="gamepad.buttons[id - 1].pressed" :id="id" />
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    <div v-else>Please connect a gamepad or press a button</div>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<style scoped></style>
