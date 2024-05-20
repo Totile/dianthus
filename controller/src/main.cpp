@@ -12,22 +12,6 @@ const int btnPin[btnCount] = {16, 15, A1, A3, 8, 7, 6, 5};
 // TODO try to set it as a Gamepad, not a joystick
 Joystick_ Joystick;
 
-/* void buttonHandler(uint8_t btnID, uint8_t btnSTate) {
-    if (btnSTate == BTN_PRESSED) {
-        Joystick.pressButton(btnID);
-        Serial.print("Button ");
-        Serial.print(btnID);
-        Serial.println(" pressed");
-        digitalWrite(lampPin[0], 1);
-    } else {
-        Joystick.releaseButton(btnID);
-        Serial.print("Button ");
-        Serial.print(btnID);
-        Serial.println(" released");
-        digitalWrite(lampPin[0], 0);
-    }
-} */
-
 Button btnArr[btnCount] = {};
 
 void setup() {
@@ -37,29 +21,15 @@ void setup() {
     for (int i = 0; i < lampCount; i++) {
         pinMode(lampPin[i], OUTPUT);
     }
-    /*     for (int i = 0; i < btnCount; i++) {
-            const Button tempBtn(i, buttonHandler);
-            btnArr[i] = tempBtn;
-        } */
 
     Serial.begin(9600);
     Joystick.begin();
 }
 
-/* static void pollButtons() {
-    for (int i = 0; i < btnCount; i++) {
-        btnArr[i].update(digitalRead(btnPin[i]));
-    }
-} */
-
 void loop() {
-    // pollButtons();
     for (int i = 0; i < btnCount; i++) {
         if (!digitalRead(btnPin[i])) {
             Joystick.pressButton(i);
-            Serial.print(i);
-            // Serial.println(digitalRead(btnPin[i]));
-            Serial.println(" button pressed");
         } else {
             Joystick.releaseButton(i);
         }
