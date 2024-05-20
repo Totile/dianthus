@@ -37,14 +37,11 @@ void setup() {
     for (int i = 0; i < lampCount; i++) {
         pinMode(lampPin[i], OUTPUT);
     }
-<<<<<<< Updated upstream
-=======
     for (int i = 0; i < btnCount; i++) {
         const Button tempBtn(i, buttonHandler);
         btnArr[i] = tempBtn;
     }
     digitalWrite(lampPin[2], 1);
->>>>>>> Stashed changes
 
     Serial.begin(9600);
     Joystick.begin();
