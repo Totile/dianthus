@@ -1,21 +1,15 @@
 <script>
 export default {
-    data() {
-        return {
-            count: 0
-        }
-    },
-    methods: {
-        increment() {
-            this.count++
-        }
-    },
-    mounted() {
-        this.increment()
+    props: {
+        buttonPressed: Boolean,
+        id: Number,
     }
 }
 </script>
 
 <template>
-    test press
+    <div>
+        <div class="alert alert-primary" v-if="buttonPressed">Button {{ id }}</div>
+        <div class="alert alert-danger" v-else>Button {{ id }}</div>
+    </div>
 </template>

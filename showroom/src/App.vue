@@ -11,7 +11,8 @@ export default {
   },
   data() {
     return {
-      gamepad: null
+      gamepad: null,
+      btnCount: 8,
     }
   },
   mounted() {
@@ -41,16 +42,16 @@ export default {
     },
     disconnectGamepad(event) {
       this.gamepad = null
-      clearInterval(this.pollGamepad)
+      clearInterval(this.pollInterval)
       console.log("Gamepad disconnected, poll ended")
     },
     showGamepadStatus() {
       console.log(this.gamepad.buttons)
-      console.log(this.gamepad.buttons[2])
+      console.log(this.gamepad.buttons[2].pressed)
       console.log(this.gamepad.buttons[0].pressed)
     },
     pollGamepad() {
-      this.pollGamepad = setInterval(() => {
+      this.pollInterval = setInterval(() => {
         this.gamepad = navigator.getGamepads()[0];
         // console.log(this.gamepad)
       }, 25)
@@ -62,7 +63,7 @@ export default {
     }
   },
   beforeDestroy() {
-    clearInterval(this.pollGamepad)
+    clearInterval(this.pollInterval)
   }
 }
 </script>
@@ -71,19 +72,10 @@ export default {
 <template class="container">
   <GlobalEvents target="window" @gamepadconnected="connectGamepad" @gamepaddisconnected="disconnectGamepad" />
   <div class="row">
-    <div class="col">
-      <img alt="Vue logo" src="./assets/logo.svg" width="125" height="125" />
-
+    <div v-if="gamepad" v-for="id in btnCount" class="col-sm">
+      <PressButtonIndicator :buttonPressed="gamepad.buttons[id - 1].pressed" :id="id" />
     </div>
-    <div class="col">
-      <button class="btn btn-danger alert alert-danger" :disabled="!gamepad || !gamepad.connected"
-        @click="showGamepadStatus">
-        btn1</button>
-    </div>
-
-    <div class="col">
-      <PressButtonIndicator />
-    </div>
+    <div v-else>Please connect a gamepad or press a button</div>
   </div>
 </template>
 
