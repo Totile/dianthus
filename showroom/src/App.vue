@@ -1,47 +1,68 @@
-<script setup>
+<script>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import PressButtonIndicator from './components/PressButtonIndicator.vue';
+import { GlobalEvents } from 'vue-global-events';
+
+export default {
+  components: {
+    PressButtonIndicator,
+    GlobalEvents,
+  },
+  data() {
+    return {
+      gamepad: null
+    }
+  },
+  mounted() {
+    /* window.addEventListener("gamepadconnected", (e) => {
+      console.log(
+        "Gamepad connected at index %d: %s. %d buttons, %d axes.",
+        e.gamepad.index,
+        e.gamepad.id,
+        e.gamepad.buttons.length,
+        e.gamepad.axes.length,
+      );
+      this.gamepad = e.gamepad
+    }); */
+  },
+  methods: {
+    connectGamepad(event) {
+      console.log("from GlobalEvent")
+      console.log(
+        "Gamepad connected at index %d: %s. %d buttons, %d axes.",
+        event.gamepad.index,
+        event.gamepad.id,
+        event.gamepad.buttons.length,
+        event.gamepad.axes.length,
+      );
+      this.gamepad = event.gamepad
+    },
+    showGamepadStatus() {
+      console.log("clicked on main button")
+      console.log(this.gamepad.id)
+    }
+  }
+}
 </script>
 
-<template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+<template class="container">
+  <GlobalEvents target="window" @gamepadconnected="connectGamepad" />
+  <div class="row">
+    <div class="col">
+      <img alt="Vue logo" src="./assets/logo.svg" width="125" height="125" />
+
     </div>
-  </header>
+    <div class="col">
+      <button class="btn btn-danger alert alert-danger" :disabled="!gamepad" @click="showGamepadStatus">
+        btn1</button>
+    </div>
 
-  <main>
-    <TheWelcome />
-  </main>
+    <div class="col">
+      <PressButtonIndicator />
+    </div>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<style scoped></style>
