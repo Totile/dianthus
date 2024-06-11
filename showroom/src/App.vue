@@ -45,10 +45,10 @@ export default {
       clearInterval(this.pollInterval)
       console.log("Gamepad disconnected, poll ended")
     },
-    showGamepadStatus() {
+    logGamepadStatus() {
+      console.log(this.gamepad)
       console.log(this.gamepad.buttons)
-      console.log(this.gamepad.buttons[2].pressed)
-      console.log(this.gamepad.buttons[0].pressed)
+      console.log(this.gamepad.axes)
     },
     pollGamepad() {
       this.pollInterval = setInterval(() => {
@@ -71,12 +71,16 @@ export default {
 
 <template class="container">
   <GlobalEvents target="window" @gamepadconnected="connectGamepad" @gamepaddisconnected="disconnectGamepad" />
-  <div class="row">
-    <div v-if="gamepad" v-for="id in btnCount" class="col-sm">
-      <PressButtonIndicator :buttonPressed="gamepad.buttons[id - 1].pressed" :id="id" />
+  <div v-if="gamepad" class="row">
+    <div class="col-sm">
+      <div v-for="id in btnCount" class="col-sm">
+        <PressButtonIndicator :buttonPressed="gamepad.buttons[id - 1].pressed" :id="id" />
+      </div>
     </div>
-    <div v-else>Please connect a gamepad or press a button</div>
+    <div class="col-sm-2">{{ gamepad.axes }}</div>
+    <button type="button" class="col-sm-2 btn btn-primary" @click="logGamepadStatus">Log gamepad</button>
   </div>
+  <div v-else>Please connect a gamepad or press a button</div>
 </template>
 
 <style scoped></style>
