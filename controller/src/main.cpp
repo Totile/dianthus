@@ -9,6 +9,7 @@
 #include "debounce.h"
 
 // Pinout definition
+constexpr bool btnNC = true;
 constexpr int lampCount = 6;
 constexpr int btnCount = 8;
 constexpr int lampPin[lampCount] = {10, 14, A0, A2, 9, 4};
@@ -21,8 +22,12 @@ constexpr int ss_addr = 0x36;
 Joystick_ Joystick;
 Adafruit_seesaw ss;
 int32_t encoder_position;
-int16_t axis_position;
-constexpr int step_factor = 4;
+int16_t axis_position = 511;
+
+int mod(int a, int b) {
+    int r = a % b;
+    return r < 0 ? r + b : r;
+}
 
 void buttonHandler(uint8_t btnID, uint8_t btnSTate) {
     if (btnSTate == BTN_PRESSED) {
@@ -78,6 +83,9 @@ void setup() {
 static void pollButtons() {
     for (int i = 0; i < btnCount; i++) {
         int state = digitalRead(btnPin[i]);
+        if (btnNC) {
+            state = 1 - state;
+        }
         btnArr[i].update(state);
     }
 }
@@ -87,15 +95,22 @@ void loop() {
 
     int32_t current_position = ss.getEncoderPosition();
     if (encoder_position != current_position) {
+        // TODO
+        // Use diff = encoder_position - current_position
+        // init axis_position at 511
+        // check that -1 % 1024 == 1023 (or 1024)
+        // cycle the joystick
         Serial.print("Encoder position ");
         Serial.println(current_position);
+        axis_position += (current_position - encoder_position);
         encoder_position = current_position;
-        axis_position = map(encoder_position, -128, 127, 0, 1023);
+        axis_position = mod(axis_position, 1023);
         Serial.print("Axis position ");
         Serial.println(axis_position);
         Serial.println("---");
+        // Serial.println(mod(-1, 1023));
         Joystick.setXAxis(axis_position);
     }
-
-    delay(1);
+    Serial.println("Successfully logged");
+    delay(100);
 }
